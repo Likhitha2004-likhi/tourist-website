@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shiva Nandi Travels</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="index.css">
+   <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+<%- include('partials/navbar') %> 
+
+<header class="welcome-container">
+  <div class="overlay"></div>
+  <div class="welcome-content fade-in-up">
+    <h1>Welcome to Shiva Nandi Travels</h1>
+    <p>Explore the Districts of Karnataka — Where History Meets Nature</p>
+  </div>
+</header>
+
+
+
+<header class="header" data-aos="fade" data-aos-duration="1500" data-aos-once="false">
+  <h1 class="header-title" data-aos="zoom-in" data-aos-delay="300" data-aos-once="false">
+    Pack Your Bags, Let Us Guide Your Soulful Getaway
+  </h1>
+  <p class="header-tagline" data-aos="fade-up" data-aos-delay="600" data-aos-once="false">
+    Let Every Trip Tell a Story of Spirit and Sight,
+    With Us, Every Destination Feels Just Right.
+  </p>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="800" data-aos-once="false">
+
+    <h1>Register Form</h1>
+   <form action="/register-home" method="POST">
+  <!-- Name -->
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+  <!-- Phone Number -->
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+  <!-- Select Date -->
+  <label for="date">Select Date:</label><br>
+  <input type="date" id="date" name="date" required><br><br>
+
+  <!-- Select Service -->
+  <label for="service">Select Service:</label><br>
+  <select id="service" name="service" required>
+    <option value="">--Choose a Destination--</option>
+    <option value="mysore">Mysore</option>
+    <option value="coorg">Coorg</option>
+    <option value="chikkamagalur">Chikkamagalur</option>
+    <option value="shivamogga">Shivamogga</option>
+    <option value="chamarajanagara">Chamarajanagara</option>
+    <option value="mangalore">Mangalore</option>
+    <option value="udupi">Udupi</option>
+    <option value="vijiyanagar">Vijiyanagar</option>
+  </select><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+  </div>
+</header>
+
+  <div class="exp-mian-container">
+    <div class="img-card-header fade-in-up"><h1>EXPERIENCE KARNATAKA</h1>
+     <p>One State. Many Worlds..</p></div>
+   
+   <div class="experience-container">
+     <div class="mysur-img fade-in-up">
+      <h4>Mysore</h4>
+     </div>
+     <div class="coorg-img fade-in-up">
+      <h4>Coorg</h4>
+     </div>
+     <div class="ckm-img fade-in-up">
+      <h4>Chikkamagalur</h4>
+     </div>
+     <div class="shivamogga-img fade-in-up">
+      <h4>Shivamogga</h4>
+     </div>
+     <div class="crn-img fade-in-up">
+      <h4>Chamarajanagar</h4>
+     </div>
+     <div class="mangalore-img fade-in-up">
+      <h4>Mangalore</h4>
+     </div>
+     <div class="upudi-img fade-in-up">
+      <h4>Udupi</h4>
+     </div>
+     <div class="vn-img fade-in-up">
+      <h4>Vijayanagara</h4>
+     </div>
+</div>
+</div>
+
+
+<div class="about-ka-container">
+  <div>
+      <h1 class="fade-in-up">The Beautiful State</h1>
+      <p class="fade-in-up">Karnataka, a vibrant state in southern India, is renowned
+         for its rich cultural heritage and diverse tourist 
+         destinations. From the majestic Mysore Palace to the serene
+          coffee plantations of Coorg, the state offers a blend of 
+          history and nature. Its traditions reflect a harmony of 
+          classical music, dance forms like Yakshagana, and intricate 
+          temple architecture. Karnataka’s cuisine is flavorful, featuring dishes 
+          like Mysore masala dosa, Bisi Bele Bath, and the famous ragi mudde.
+           The state celebrates festivals with great enthusiasm, including Dasara in Mysore, Ugadi, 
+           and the vibrant Karaga festival. Agriculture plays a vital role, with major crops such as rice, maize, coffee,
+           and spices thriving in its varied climate. Karnataka is also known for its lush 
+           forests and medicinal plants, contributing to its ecological richness. The warmth of its people, combined with its 
+           cultural diversity and natural beauty, makes Karnataka a unique destination for travelers seeking tradition and tranquility.</p>
+      </div>
+      <div>
+           <img src="https://as2.ftcdn.net/jpg/05/79/26/57/1000_F_579265739_a5P0ncPniwSNZkZpYg4WqYoLP0bjPLoL.jpg"  
+           class="fade-in-up" />
+      </div>
+      </div>
+
+<div class="karnataka-section">
+<div class="article-container">
+  <div>
+    <h1>LATEST IN KARNATAKA</h1>
+    <p>Information related to tourism in Karnataka</p>
+  </div>
+  <div class="karnataka-cards">
+    <div class="karnataka-card" data-aos="fade-up">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSJwesMeSMDEjJLvv6jBJFKFfH91XeIzdrUQ&s" />
+      <h3><a href="https://en.wikipedia.org/wiki/Hampi" target="_blank">Pampakshetra or Kishkindha-kshetra (Hampi)</a></h3>
+    </div>
+    <div class="karnataka-card" data-aos="fade-up">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/1200px-Mysore_Palace_Morning.jpg" />
+      <h3><a href="https://en.wikipedia.org/wiki/Mysore_Palace" target="_blank">Amba Vilas Palace (Mysore Palace)</a></h3>
+    </div>
+    <div class="karnataka-card" data-aos="fade-up">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZMXlVDnuly90a8YpdHJqv3vJaoskdL_Fh4w&s" />
+      <h3><a href="https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi" target="_blank">Virupaksha Temple</a></h3>
+    </div>
+    <div class="karnataka-card" data-aos="fade-up">
+      <img src="https://i.ytimg.com/vi/kTgI1v0BzTI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAiYBbQPcEgXVtAXDEPXYn1552tMw" />
+      <h3><a href="https://en.wikipedia.org/wiki/Mysore_Zoo" target="_blank">Sri Chamarajendra Zoological Gardens</a></h3>
+    </div>
+    <div class="karnataka-card" data-aos="fade-up">
+      <img src="https://assets.thehansindia.com/h-upload/2022/07/09/1302072-krishna-raja-sagara-dam.jpg" />
+      <h3><a href="https://en.wikipedia.org/wiki/Krishna_Raja_Sagara" target="_blank">Krishna Raja Sagara Dam</a></h3>
+    </div>
+    <div class="karnataka-card" data-aos="fade-up">
+      <img src="https://img.indiahighlight.com/1170x550/ih/uploads/1643864491.jpg" />
+      <h3><a href="https://en.wikipedia.org/wiki/Dharmasthala" target="_blank">Shri Kshetra Dharmasthala</a></h3>
+    </div>
+    <div class="karnataka-card" data-aos="fade-up">
+      <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20200827153640/iStock-867950876.jpg" />
+      <h3><a href="https://en.wikipedia.org/wiki/Udupi_Sri_Krishna_Matha" target="_blank">Udupi Sri Krishna Temple</a></h3>
+    </div>
+    <div class="karnataka-card" data-aos="fade-up">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb-vwkXNjHhtvySFz6XWuPFTRaz6wTJArs6A&s" />
+      <h3><a href="https://en.wikipedia.org/wiki/Gol_Gumbaz" target="_blank">Gol Gumbaz of Adil Shah</a></h3>
+    </div>
+    <div class="karnataka-card" data-aos="fade-up">
+  <img src="https://captainnileshholidays.com/assets/images/destination/BadamiCaves.webp" />
+  <h3><a href="https://en.wikipedia.org/wiki/Badami" target="_blank">Badami Cave Temples</a></h3>
+</div>
+
+<div class="karnataka-card" data-aos="fade-up">
+  <img src="https://blog.summitersadventures.com/uploads/images/2020/06/image_750x_5ee1a9b5877cd.jpg" />
+  <h3><a href="https://en.wikipedia.org/wiki/Jog_Falls" target="_blank">Jog Falls</a></h3>
+</div>
+<div class="karnataka-card" data-aos="fade-up">
+  <img src="https://c8.alamy.com/comp/2R8C9CE/kollur-mookambika-templemookambikakarnatakasouth-indiachandika-homammookambika-temple-chariothindu-templeindian-templesri-mooksmbiks-temple-2R8C9CE.jpg" />
+  <h3><a href="https://en.wikipedia.org/wiki/Mookambika_Temple" target="_blank">Kollur Mookambika Temple</a></h3>
+</div>
+<div class="karnataka-card" data-aos="fade-up">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnu0QhUM2gTa8oWMFq5o0aUDP3yoOH_e5ULA&s" />
+  <h3><a href="https://en.wikipedia.org/wiki/St._Mary%27s_Islands" target="_blank">St. Mary’s Island</a></h3>
+</div>
+<div class="karnataka-card" data-aos="fade-up">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzhsj7qP5GvxFyGD0nBQ-7aMjePNPao8eJA&s" />
+  <h3><a href="https://en.wikipedia.org/wiki/Kudremukh_National_Park" target="_blank">Kudremukh National Park</a></h3>
+</div>
+
+
+<div class="karnataka-card" data-aos="fade-up">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKKDrTz9_h-UG0CSF1Wg3f-hGe1HNBC9XfFQ&s" />
+  <h3><a href="https://en.wikipedia.org/wiki/Biligiriranga_Swamy_Temple_Wildlife_Sanctuary" target="_blank">Biligiri Rangaswamy Temple & Sanctuary</a></h3>
+</div>
+
+<div class="karnataka-card" data-aos="fade-up">
+  <img src="https://aroundmangalore.com/wp-content/uploads/2015/07/Kateel-1.png" />
+  <h3><a href="https://en.wikipedia.org/wiki/Kateel" target="_blank">Kateel Durga Parameshwari Temple</a></h3>
+</div>
+
+
+<div class="karnataka-card" data-aos="fade-up">
+  <img src="https://live.staticflickr.com/7470/16001718986_a7538d38fe_c.jpg" />
+  <h3><a href="https://en.wikipedia.org/wiki/Chamundeshwari_Temple" target="_blank">Chamundi Hills & Temple</a></h3>
+</div>
+
+
+
+  </div>
+</div>
+</div>
+
+
+
+<button id="backToTop" title="Go to top">⬆️</button>
+
+
+<%- include('partials/footer') %>
+
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<script>
+  window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  if (window.scrollY > 100) {
+    header.style.background = "linear-gradient(to bottom, #ffffff, #ffffff)";
+  } else {
+    header.style.background = "linear-gradient(to bottom, #ffffff, #ffffff)";
+  }
+});
+
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".experience-container > div");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          } else {
+            entry.target.classList.remove("animate-in");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+</script>
+
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // duration of animation
+    once: true // whether animation should happen only once
+  });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const animatedElements = document.querySelectorAll(".fade-in-up");
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          } else {
+            entry.target.classList.remove("animate-in");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    animatedElements.forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".fade-in-up");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-in");
+        } else {
+          entry.target.classList.remove("animate-in");
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const bgImages = [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt-fnPI4tfg5u2KWS1SpbJLyJ8gtXCYozGgQ&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp2fK88X5GaMQOhoeLci4zVjJXHuE9t7MsAw&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZdclZgEiErrTajBhUYVHcr379ATRopsAMg&s",
+    "https://www.theindiatourism.com/images/Sakleshpur.jpg",
+    "https://files.worldwildlife.org/wwfcmsprod/images/Tiger_resting_Bandhavgarh_National_Park_India/hero_small/6aofsvaglm_Medium_WW226365.jpg",
+    "https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/best-places-to-visit-in-karnataka.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJsYpz-GU7rtuXNVF2WI7faYU3XVseRJq5Yg&s",
+    "https://sonakshitravels.com/uploads/karnataka-feature-compressed.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEdOPqGBNScQKu3DxBzzwE0eAcPuwIjQFPRQ&s"
+  ];
+
+  let currentIndex = 0;
+  const container = document.querySelector(".welcome-container");
+
+  // Set initial image
+  container.style.backgroundImage = `url('${bgImages[0]}')`;
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % bgImages.length;
+    console.log("Switching to image index:", currentIndex);
+    container.style.backgroundImage = `url('${bgImages[currentIndex]}')`;
+  }, 4000); // change every 4 seconds
+});
+</script>
+
+
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shiva Nandi Travels</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<%- include('partials/navbar') %>
+
+<header class="about-us-contanier">
+  <div class="about-us-card-container">
+    <h1>About Us</h1>
+    <p>Welcome to Shiva Nandi Travels</p>
+  </div>
+</header>
+
+
+<section class="about-details">
+  <div class="about-block">
+    <img src="https://www.vacationhive.com/wp-content/uploads/2022/06/top-nature-spots-near-manila.png" alt="Nature 1" />
+    <div class="about-text">
+      <h2>Who We Are</h2>
+      <p>
+        At <strong>Shiva Nandi Travels</strong>, we believe travel is more than just reaching a destination—it's about the journey, the stories, and the unforgettable experiences.
+      </p>
+    </div>
+  </div>
+
+  <div class="about-block">
+    <img src="https://www.holidify.com/images/bgImages/MYSORE.jpg" alt="Nature 2" />
+    <div class="about-text">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to make every journey memorable by providing reliable transportation, customized tour packages, and friendly support for every traveler.
+      </p>
+    </div>
+  </div>
+
+  <div class="about-block">
+    <img src="https://harindabama.com/wp-content/uploads/2016/04/ha01.jpg?w=1152&h=792" alt="Nature 3" />
+    <div class="about-text">
+      <h2>Why Travel With Us?</h2>
+      <p>
+        ✅ Experienced drivers<br>
+        ✅ Clean, well-maintained vehicles<br>
+        ✅ Affordable rates<br>
+        ✅ Custom tour packages
+      </p>
+    </div>
+  </div>
+
+  <div class="about-block">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7MLOaLIes9c8rElOz6UDqz0IOTRPs5yONUQ&s" alt="Nature 4" />
+    <div class="about-text">
+      <h2>Let’s Explore Together</h2>
+      <p>
+        Whether it's a spiritual trip, nature retreat, or cultural journey, <strong>Shiva Nandi Travels</strong> is here to guide you with comfort and care.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="why-choose-wrapper">
+  <!-- Container 1: Image -->
+  <div class="why-container one">
+    <img src="https://www.anjaneyatourandtravels.com/wp-content/uploads/2025/04/col-left-01.jpeg" alt="Family travel image" />
+  </div>
+
+  <!-- Container 2: Stats -->
+  <div class="why-container two">
+    <div class="stat-box">
+      <div class="icon">👨‍👩‍👧‍👦</div>
+      <div>
+        <h1>200K</h1>
+        <p>Satisfied Clients</p>
+      </div>
+    </div>
+    <div class="stat-box">
+      <div class="icon">🏆</div>
+      <div>
+        <h1>80+</h1>
+        <p>Great Tours</p>
+      </div>
+    </div>
+    <div class="stat-box">
+      <div class="icon">🌍</div>
+      <div>
+        <h1>160+</h1>
+        <p>Organized Trips</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container 3: Text Info -->
+  <div class="why-container three">
+    <h4 class="why-heading-small">WHY CHOOSE US</h4>
+    <h2 class="why-heading-big">Unleash Your Journey With Our Well Planned Tours</h2>
+    <p>
+      Trusted, reliable, and customer-focused—Anjaneya Travels offers seamless journeys with expert service,
+      comfortable vehicles, and personalized travel solutions for every kind of explorer.
+    </p>
+
+    <div class="feature-box">
+      <div class="icon">🕒</div>
+      <div>
+        <h4>Flexibility and Convenience</h4>
+        <p>Flexible plans, easy booking, and 24/7 support—travel your way with Anjaneya Travels.</p>
+      </div>
+    </div>
+    <div class="feature-box">
+      <div class="icon">💰</div>
+      <div>
+        <h4>Single rate includes all</h4>
+        <p>The cost of actually renting the vehicle for the more specific duration.</p>
+      </div>
+    </div>
+    <div class="feature-box">
+      <div class="icon">✅</div>
+      <div>
+        <h4>No Hidden Charges</h4>
+        <p>No surprise fees or costs — completely transparent pricing structure.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<button id="backToTop" title="Go to top">⬆️</button>
+
+<%- include('partials/footer') %>
+
+
+
+
+
+
+
+
+<script>
+  function animateOnView() {
+    const h1 = document.querySelector('.about-us-card-container h1');
+    const p = document.querySelector('.about-us-card-container p');
+    const windowHeight = window.innerHeight;
+
+    const h1Rect = h1.getBoundingClientRect();
+    const pRect = p.getBoundingClientRect();
+
+    if (h1Rect.top < windowHeight - 100) {
+      h1.classList.add('animate');
+    }
+    if (pRect.top < windowHeight - 100) {
+      p.classList.add('animate');
+    }
+  }
+
+  // Run on scroll
+  window.addEventListener('scroll', animateOnView);
+
+  // Run on load (for refresh)
+  window.addEventListener('load', animateOnView);
+</script>
+
+
+<script>
+  function animateAboutSections() {
+    const aboutBlocks = document.querySelectorAll('.about-block');
+    const windowHeight = window.innerHeight;
+
+    aboutBlocks.forEach(block => {
+      const rect = block.getBoundingClientRect();
+      if (rect.top < windowHeight - 100) {
+        block.classList.add('animate');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animateAboutSections);
+  window.addEventListener('load', animateAboutSections);
+</script>
+
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+</body>
+</html>

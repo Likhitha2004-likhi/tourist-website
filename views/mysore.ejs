@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mysore - Shiva Nandi Travels</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/mysore.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <header class="mysore-us-contanier">
+  <div class="mysore-us-card-container">
+    <h1>Mysore</h1>
+    <p>Mysore is a vibrant royal city known for its majestic palaces, rich heritage, and the aroma of sandalwood in the air.</p>
+  </div>
+</header>
+
+
+<section class="trip-section">
+  <div class="trip-content">
+    <h1>Explore the Royal Charm of Mysore with Shiva Nandi Travels</h1>
+    <p>Mysore, often hailed as the Cultural Capital of Karnataka, is a city that effortlessly blends royal heritage, vibrant traditions, and modern charm. Known for its majestic palaces, rich history, and warm hospitality, Mysore is a must-visit destination for every traveler seeking a taste of South India’s grandeur.</p>
+    <h1>Overview & History</h1>
+    <p><strong>Mysore</strong>, officially <em>Mysuru</em>, has been the seat of the Wadiyar dynasty since the 14th century and served as the capital of the Kingdom of Mysore for nearly six centuries (1399–1947) :contentReference[oaicite:2]{index=2}. Known as the “City of Palaces” and the “Cultural Capital of Karnataka,” it flourished under maharajas like Krishnaraja III and Krishnaraja IV, who endowed the city with modern infrastructure, splendid public buildings, and thriving arts :contentReference[oaicite:3]{index=3}.</p>
+
+    <h1>Architectural & Heritage Highlights</h1>
+    <ul>
+      <li><strong>Mysore Palace (Amba Vilas)</strong>: A magnificent Indo-Saracenic edifice built between 1897–1912 under Henry Irwin. With its golden domes, glittering Durbar halls, intricate stained glass and sprawling gardens, it draws over 6 million visitors annually :contentReference[oaicite:4]{index=4}.</li>
+      <li><strong>Jaganmohan & Jayalakshmi Vilas Palaces</strong>: Originally royal residences, later transformed into an art gallery and museum in 1915, housing rare artifacts and fine artwork :contentReference[oaicite:5]{index=5}.</li>
+      <li><strong>Chamundi Hills & Temple</strong>: About 13 km east, crowned by the Chamundeshwari Temple, reached via 1,008 stone steps, with the iconic monolithic Nandi statue and panoramic city views :contentReference[oaicite:6]{index=6}.</li>
+    </ul>
+
+    <h1>Cultural Scene & Festivals</h1>
+    <ul>
+      <li><strong>Mysore Dasara</strong>: A ten-day cultural extravaganza in September–October, featuring royal processions, temple ceremonies, traditional performances, and dazzling illumination of the palace :contentReference[oaicite:7]{index=7}.</li>
+      <li><strong>Art, Cuisine & Crafts</strong>: Rich in heritage painting (Mysore style), silk saris, sandalwood carvings, and Mysore Pak sweet. Specialties include Mysore dosa, bisibele bath and local street foods :contentReference[oaicite:8]{index=8}.</li>
+    </ul>
+    <img src="https://www.anjaneyatourandtravels.com/wp-content/uploads/2025/04/Mysore-Sight-Seeing-One-day-tour-plan-11-1.jpg" />
+    <h1>Gardens, Lakes, and More</h1>
+    <p>Mysore is not just about royal grandeur—it’s also a city of serenity and natural beauty. The Brindavan Gardens, located near the Krishnaraja Sagar Dam, are world-famous for their musical fountains and lush landscapes. Boating at the peaceful Karanji Lake, visiting the Mysore Zoo (one of the oldest in India), or enjoying a stroll through the St. Philomena’s Church are all wonderful ways to explore the city’s diverse attractions.</p>
+    <h1>Culture, Cuisine, and Crafts</h1>
+    <p>Mysore is also a hub for culture lovers. Visit the Jaganmohan Palace Art Gallery to admire traditional Mysore paintings, or shop for authentic Mysore silk sarees and sandalwood artifacts. Don’t miss out on tasting local delicacies like Mysore Pak, a rich sweet that originated here, or enjoying a hearty South Indian meal served on a banana leaf.</p>
+    <h1>Education, Economy & Growth</h1>
+    <p>Mysore is a hub for tourism, education (University of Mysore, medical and engineering colleges), and cottage industries—silk weaving, sandalwood products, bronze work. Its industrial base includes Mysore Sandal Soap and Mysore Paints :contentReference[oaicite:9]{index=9}.</p>
+
+    <h1>Tourist Planning & Amenities</h1>
+    <ul>
+      <li><strong>Best Time to Visit:</strong> October–March—cool weather and vibrant festival season.</li>
+      <li><strong>Access:</strong> Mysore Airport (domestic), with excellent rail and road links to Bengaluru (140 km). Intracity travel includes buses, tuk‑tuks, and taxi services.</li>
+      <li><strong>Stay Options:</strong> Range from heritage hotels and palace-stays to guesthouses and budget lodges near the palace and Chamundi Hills.</li>
+      <li><strong>Must-Do Activities:</strong> Ride the heritage toy train, stroll Brindavan Gardens by moonlight, explore the Mysore Zoo, and visit the Sand Sculpture Museum at the foot of Chamundi Hills :contentReference[oaicite:10]{index=10}.</li>
+    </ul>
+    <a href="https://wa.me/917483636511?text=Hi%20Shiva%20Nandi%20Travels%2C%20I%20need%20help%20with%20my%20trip%20booking." target="_blank">
+  <button>
+    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+  </button>
+</a>
+
+
+
+</div>
+</section>
+
+
+
+<div>
+  <h1 style="text-align: center;">Book Your Places</h1>
+    <form class="trip-form" action="/submit" method="POST">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Name" required>
+    </div>
+    <div class="form-group">
+      <label>Email Id</label>
+      <input type="email" name="email" placeholder="Email Id" required>
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="text" name="phone" placeholder="Please Enter Your PH. No." required>
+    </div>
+  
+    <div class="form-group">
+      <label>No. of Adults</label>
+      <input type="number" name="adults" placeholder="No. OF Adults" required>
+    </div>
+
+    <div class="form-group">
+      <label>No. of Children</label>
+      <input type="number" name="children" placeholder="No. OF Children">
+    </div>
+    <div class="form-group">
+      <label>Date</label>
+      <input type="date" name="date" required>
+    </div>
+
+    <div class="form-group">
+      <label>Select AC</label>
+      <select name="ac">
+        <option value="AC">AC</option>
+        <option value="Non-AC">Non-AC</option>
+        <option value="Luxury">Luxury</option>
+      </select>
+
+
+    </div>
+      <div class="form-group">
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="">--Choose a Destination--</option>
+        <option value="mysore">Mysore</option>
+        <option value="coorg">Coorg</option>
+        <option value="chikkamagalur">Chikkamagalur</option>
+        <option value="shivamogga">shivamogga</option>
+        <option value="Chamarjanagara">Chamarjanagara</option>
+        <option value="mangalore">Mangalore</option>
+        <option value="udupi">Udupi</option>
+        <option value="vijiyanagar">Vijiyanagar</option>
+      </select>
+      </div>
+
+
+    <div class="form-submit">
+      <button type="submit">Submit Now</button>
+    </div>
+  </form>
+  </div>
+
+
+
+
+<button id="backToTop" title="Go to top">⬆️</button>
+
+  <%- include('partials/footer') %>
+
+  
+<script>
+  function animateOnView() {
+    const h1 = document.querySelector('.mysore-us-card-container h1');
+    const p = document.querySelector('.mysore-us-card-container p');
+    const windowHeight = window.innerHeight;
+
+    const h1Rect = h1.getBoundingClientRect();
+    const pRect = p.getBoundingClientRect();
+
+    if (h1Rect.top < windowHeight - 100) {
+      h1.classList.add('animate');
+    }
+    if (pRect.top < windowHeight - 100) {
+      p.classList.add('animate');
+    }
+  }
+
+  // Run on scroll
+  window.addEventListener('scroll', animateOnView);
+
+  // Run on load (for refresh)
+  window.addEventListener('load', animateOnView);
+</script>
+
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+</body>
+</html>

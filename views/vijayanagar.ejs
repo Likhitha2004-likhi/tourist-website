@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vijayanagara - Shiva Nandi Travels</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/vijaynagar.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <header class="vjn-us-contanier">
+  <div class="vjn-us-card-container">
+    <h1>Vijayanagara</h1>
+    <p>Vijayanagara echoes the glory of a lost empire, with its grand ruins at Hampi telling timeless tales of art, architecture, and ancient power.</p>
+  </div>
+</header>
+
+
+
+<section class="trip-section">
+  <div class="trip-content">
+    <h1>History & Empire Overview</h1>
+    <p>Vijayanagara, the "City of Victory," served as the capital of the illustrious Vijayanagara Empire from 1336 to 1565 CE. Founded by Harihara I and Bukka Raya of the Sangama dynasty, it grew into one of the world’s largest medieval cities—second only to Beijing—with an estimated population of ~500,000 by 1500 CE :contentReference[oaicite:2]{index=2}.</p>
+    <p>The empire was a bastion of Hindu rule in South India, fiercely resisting northern invasions for over two centuries. It reached its zenith under Krishnadevaraya (1509–29), achieving military, administrative, and cultural heights :contentReference[oaicite:3]{index=3}.</p>
+
+    <h1>Architecture & Monumental Sites</h1>
+    <ul>
+      <li><strong>Virupaksha Temple</strong>: A 7th‑century shrine dedicated to Lord Shiva, continuously in worship and surrounded by the famed ruins of Hampi :contentReference[oaicite:4]{index=4}.</li>
+      <li><strong>Vittala Temple Complex</strong>: Renowned for its iconic stone chariot and resonant musical pillars—a hallmark of Vijayanagara architecture :contentReference[oaicite:5]{index=5}.</li>
+      <li><strong>Lotus Mahal & Elephant Stables</strong>: Reflecting Indo‑Persian and Deccan aesthetic influences in secular palace architecture :contentReference[oaicite:6]{index=6}.</li>
+      <li><strong>Hazara‑Rama & Kodandarama Temples</strong>: Royal temples noted for elaborate relief work depicting scenes from Ramayana and Mahabharata :contentReference[oaicite:7]{index=7}.</li>
+    </ul>
+
+    <h1>Cultural & Artistic Legacy</h1>
+    <ul>
+      <li><strong>Vijayanagara Style</strong>: A syncretic fusion of Chalukya, Hoysala, Pandya, and Chola traditions, featuring grand gopurams, pillared mandapas, and intricate granite carvings :contentReference[oaicite:8]{index=8}.</li>
+      <li><strong>Painting & Sculpture</strong>: Frescoes in temples like Virupaksha, along with a distinct architectural sculpture style that influenced later Mysore and Tanjore schools :contentReference[oaicite:9]{index=9}.</li>
+      <li><strong>Literature & Music</strong>: A flourishing multilingual literary tradition in Kannada, Telugu, Tamil and Sanskrit, stimulated by royal patronage. Also, Carnatic music in its current form took shape during this era :contentReference[oaicite:10]{index=10}.</li>
+    </ul>
+
+    <img src="https://s7ap1.scene7.com/is/image/incredibleindia/vitthala-temple-complex-hampi-tri-hero?qlt=82&ts=1727164508836" />
+
+    <h1>Empire & Administration</h1>
+    <p>Vijayanagara featured a quasi‑federal system where provinces were governed by royal princes and nobility, maintaining their armies and courts while paying tribute to the central authority :contentReference[oaicite:11]{index=11}. The economy was advanced, with strong agriculture, mining, textiles, trade (both inland and overseas), and guild-regulated industries :contentReference[oaicite:12]{index=12}.</p>
+
+    <h1>Decline & Declared Heritage</h1>
+    <p>The empire declined sharply after the Battle of Talikota in 1565, when combined armies of the Deccan Sultanates defeated Vijayanagara, leading to the capital’s destruction. Successor dynasties moved capitals to Penukonda and Chandragiri until the empire fully dissolved by the mid-17th century :contentReference[oaicite:13]{index=13}.</p>
+    <p>Today, the UNESCO-listed Group of Monuments at Hampi stand as a window into the grandeur and influence of the Vijayanagara Empire :contentReference[oaicite:14]{index=14}.</p>
+
+    <h1>Visitor Planning</h1>
+    <ul>
+      <li><strong>Best Time to Visit:</strong> October–March, when weather is pleasant for exploring ruins.</li>
+      <li><strong>Access:</strong> Nearest airport & major railhead: Hospet (Hosapete), ~13 km away. Good road connectivity from Hospet and Bangalore.</li>
+      <li><strong>Stay Options:</strong> A range from guesthouses and riverside homestays in Hampi Bazaar to resorts near Hospet.</li>
+      <li><strong>Tour Tip:</strong> Rent a bicycle or moped to tour the spread-out ruins; a two-day itinerary covers main monuments comfortably.</li>
+    </ul>
+    
+    
+    <a href="https://wa.me/917483636511?text=Hi%20Shiva%20Nandi%20Travels%2C%20I%20need%20help%20with%20my%20trip%20booking." target="_blank">
+  <button>
+    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+  </button>
+</a>
+
+
+
+</div>
+</section>
+
+<div>
+  <h1 style="text-align: center;">Book Your Places</h1>
+    <form class="trip-form" action="/submit" method="POST">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Name" required>
+    </div>
+    <div class="form-group">
+      <label>Email Id</label>
+      <input type="email" name="email" placeholder="Email Id" required>
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="text" name="phone" placeholder="Please Enter Your PH. No." required>
+    </div>
+  
+    <div class="form-group">
+      <label>No. of Adults</label>
+      <input type="number" name="adults" placeholder="No. OF Adults" required>
+    </div>
+
+    <div class="form-group">
+      <label>No. of Children</label>
+      <input type="number" name="children" placeholder="No. OF Children">
+    </div>
+    <div class="form-group">
+      <label>Date</label>
+      <input type="date" name="date" required>
+    </div>
+
+    <div class="form-group">
+      <label>Select AC</label>
+      <select name="ac">
+        <option value="AC">AC</option>
+        <option value="Non-AC">Non-AC</option>
+        <option value="Luxury">Luxury</option>
+      </select>
+
+
+    </div>
+      <div class="form-group">
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="">--Choose a Destination--</option>
+        <option value="mysore">Mysore</option>
+        <option value="coorg">Coorg</option>
+        <option value="chikkamagalur">Chikkamagalur</option>
+        <option value="shivamogga">shivamogga</option>
+        <option value="Chamarjanagara">Chamarjanagara</option>
+        <option value="mangalore">Mangalore</option>
+        <option value="udupi">Udupi</option>
+        <option value="vijiyanagar">Vijiyanagar</option>
+      </select>
+      </div>
+
+
+    <div class="form-submit">
+      <button type="submit">Submit Now</button>
+    </div>
+  </form>
+  </div>
+
+
+
+<button id="backToTop" title="Go to top">⬆️</button>
+
+
+  <%- include('partials/footer') %>
+
+  
+<script>
+  function animateOnView() {
+    const h1 = document.querySelector('.vjn-us-card-container h1');
+    const p = document.querySelector('.vjn-us-card-container p');
+    const windowHeight = window.innerHeight;
+
+    const h1Rect = h1.getBoundingClientRect();
+    const pRect = p.getBoundingClientRect();
+
+    if (h1Rect.top < windowHeight - 100) {
+      h1.classList.add('animate');
+    }
+    if (pRect.top < windowHeight - 100) {
+      p.classList.add('animate');
+    }
+  }
+
+  // Run on scroll
+  window.addEventListener('scroll', animateOnView);
+
+  // Run on load (for refresh)
+  window.addEventListener('load', animateOnView);
+</script>
+
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+body {
+  padding-top: 100px; /* pushes all content below the navbar */
+}
+/* Reset basic styles */
+.about-us-contanier {
+  position: relative;
+  background-image: url('https://www.youngisthan.in/wp-content/uploads/2018/11/travelling-solo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.about-us-contanier::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black transparent overlay */
+  z-index: 1;
+}
+
+.about-us-card-container {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.about-us-card-container h1,
+.about-us-card-container p {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+
+.about-us-card-container h1.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-us-card-container h1 {
+  font-size: 5rem;
+  transition-delay: 0s;
+}
+
+.about-us-card-container p {
+  font-size: 3rem;
+  margin-top: 1rem;
+  transition-delay: 0.3s;
+}
+
+.about-us-card-container p.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/*2nd part css*/
+
+.about-details {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.about-block.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-block img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1 1 300px;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  color: #1e3d59;
+  margin-bottom: 15px;
+  transition: all 0.6s ease;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  transition: all 0.6s ease 0.2s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
+
+/*last past of About us section*/
+.why-choose-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.why-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Image Box */
+.why-container.one {
+  flex: 1 1 30%;
+  padding: 0;
+}
+.why-container.one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Stats Box */
+.why-container.two {
+  flex: 1 1 30%;
+  background-color: #f47c2c;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.stat-box {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.stat-box .icon {
+  font-size: 30px;
+}
+
+/* Text/Features Box */
+.why-container.three {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+}
+.why-heading-small {
+  color: #f47c2c;
+  font-size: 30px;
+}
+.why-heading-big {
+  font-size: 50px;
+  font-weight: bold;
+}
+.feature-box {
+  display: flex;
+  align-items: center;  /* ✅ Align text and icon evenly */
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.feature-box .icon {
+  font-size: 24px;
+  color: #f47c2c;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .why-choose-wrapper {
+    flex-direction: column;
+  }
+  .why-container {
+    flex: 1 1 100%;
+  }
+  .why-heading-big {
+    font-size: 20px;
+  }
+  .stat-box h1 {
+    font-size: 24px;
+  }
+}
+
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  font-size: 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* hidden initially */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coorg - Shiva Nandi Travels</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/coorg.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <header class="coorg-us-contanier">
+  <div class="coorg-us-card-container">
+    <h1>Coorg</h1>
+    <p>Coorg, the ‘Scotland of India’, is a serene hill station blanketed with coffee plantations, misty mountains, and cascading waterfalls.</p>
+  </div>
+</header>
+
+
+
+
+
+
+<section class="trip-section">
+ <div class="trip-content">
+  <h1>Discover Serenity, Coffee, and Culture with Anjaneya Travels</h1>
+  <p>Nestled in the lush Western Ghats of Karnataka, Coorg—officially known as Kodagu—is a picturesque hill station famed for its verdant landscapes, aromatic coffee estates, cascading waterfalls, and vibrant culture. Often referred to as the “Scotland of India”, Coorg is a dream destination for nature lovers, honeymooners, adventure seekers, and those looking to unwind in nature’s embrace.</p>
+  
+  <p>With Anjaneya Travels, your journey to Coorg becomes more than a holiday—it’s a handcrafted experience filled with stunning views, local flavors, and memorable adventures.</p>
+  
+  <h1>The Allure of Coorg</h1>
+  <p>Coorg’s charm lies in its scenic beauty and the tranquility that wraps around every corner. Rolling hills, thick forests, spice and coffee plantations, and misty mornings create the perfect escape from urban chaos. Whether you’re sipping freshly brewed coffee on a plantation homestay veranda or exploring rugged hill trails, Coorg has something for everyone.</p>
+  
+  <p>Our Coorg Tour Package is thoughtfully designed to showcase the region’s best while providing comfort, flexibility, and a personalized experience.</p>
+
+  <h1>Top Attractions in Coorg</h1>
+  <ul>
+    <li><strong>Abbey Falls:</strong> A beautiful waterfall located in the middle of coffee estates. The sight and sound of water crashing amidst greenery is simply refreshing.</li>
+    <li><strong>Raja’s Seat:</strong> A popular sunset point in Madikeri, offering panoramic views of the valley. Once a favorite of the Kodava kings, it’s still a royal spot for reflection and photography.</li>
+    <li><strong>Dubare Elephant Camp:</strong> An interactive experience where you can observe, bathe, and feed elephants in a natural forest setting. A favorite for families and wildlife lovers.</li>
+    <li><strong>Talacauvery & Bhagamandala:</strong> Sacred sites where the mighty Cauvery River originates. Surrounded by hills and clouds, this is a spiritual and scenic highlight.</li>
+    <li><strong>Coffee Plantations:</strong> Take a guided tour through Coorg’s famous estates, learn about the coffee-making process, and enjoy a fresh cup of Coorg’s finest brew.</li>
+    <li><strong>Madikeri Fort & Omkareshwara Temple:</strong> Explore the town’s historical and cultural side with visits to these significant landmarks.</li>
+  </ul>
+
+  <img src="https://media.istockphoto.com/id/480589578/photo/abbey-falls.jpg?s=612x612&w=is&k=20&c=QLBiW-wfHtGB8P4FXASdBljq1X7gBJhPX71kF9SDjzk=" />
+
+  <h1>Culture, Cuisine & Warm Hospitality</h1>
+  <p>Coorg is also home to the Kodava community—known for their distinct customs, martial traditions, and warm hospitality. Don’t miss the chance to savor local delicacies like Pandi Curry (pork curry), Kadambuttu (rice dumplings), and Coorg-style coffee.</p>
+
+  <p>Shopping in Coorg is a delight too—stock up on spices, homemade chocolates, sandalwood oils, and of course, premium coffee beans.</p>
+
+  <h1>Why Travel with Anjaneya Travels?</h1>
+  <p>At Anjaneya Travels, we take pride in delivering customized and hassle-free Coorg tour experiences. Whether it’s a romantic getaway, a family trip, or a solo retreat, our packages include:</p>
+
+  <ul>
+    <li>Comfortable private transportation</li>
+    <li>Handpicked accommodations (resorts, homestays, or luxury stays)</li>
+    <li>Local guides and sightseeing arrangements</li>
+    <li>Flexible itineraries based on your interests</li>
+    <li>24/7 travel support</li>
+  </ul>
+
+  <h1>Let Coorg Captivate You</h1>
+  <p>With mist-covered mountains, tranquil rivers, and endless coffee-scented breezes, Coorg is a destination that heals, refreshes, and inspires. Let Anjaneya Travels take you there—where every moment is a breath of fresh air, and every journey is one to remember.</p>
+
+  <p><strong>Book your Coorg tour today and experience the soul of Karnataka like never before!</strong></p>
+
+  <a href="https://wa.me/917483636511?text=Hi%20Anjaneya%20Travels%2C%20I%20am%20interested%20in%20the%20Coorg%20tour%20package." target="_blank">
+    <button>
+      <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+    </button>
+  </a>
+</div>
+
+
+
+</div>
+</section>
+
+
+<div>
+  <h1 style="text-align: center;">Book Your Places</h1>
+    <form class="trip-form" action="/submit" method="POST">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Name" required>
+    </div>
+    <div class="form-group">
+      <label>Email Id</label>
+      <input type="email" name="email" placeholder="Email Id" required>
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="text" name="phone" placeholder="Please Enter Your PH. No." required>
+    </div>
+  
+    <div class="form-group">
+      <label>No. of Adults</label>
+      <input type="number" name="adults" placeholder="No. OF Adults" required>
+    </div>
+
+    <div class="form-group">
+      <label>No. of Children</label>
+      <input type="number" name="children" placeholder="No. OF Children">
+    </div>
+    <div class="form-group">
+      <label>Date</label>
+      <input type="date" name="date" required>
+    </div>
+
+    <div class="form-group">
+      <label>Select AC</label>
+      <select name="ac">
+        <option value="AC">AC</option>
+        <option value="Non-AC">Non-AC</option>
+        <option value="Luxury">Luxury</option>
+      </select>
+
+
+    </div>
+      <div class="form-group">
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="">--Choose a Destination--</option>
+        <option value="mysore">Mysore</option>
+        <option value="coorg">Coorg</option>
+        <option value="chikkamagalur">Chikkamagalur</option>
+        <option value="shivamogga">shivamogga</option>
+        <option value="Chamarjanagara">Chamarjanagara</option>
+        <option value="mangalore">Mangalore</option>
+        <option value="udupi">Udupi</option>
+        <option value="vijiyanagar">Vijiyanagar</option>
+      </select>
+      </div>
+
+
+    <div class="form-submit">
+      <button type="submit">Submit Now</button>
+    </div>
+  </form>
+  </div>
+
+
+<button id="backToTop" title="Go to top">⬆️</button>
+  <%- include('partials/footer') %>
+
+  
+<script>
+  function animateOnView() {
+    const h1 = document.querySelector('.coorg-us-card-container h1');
+    const p = document.querySelector('.coorg-us-card-container p');
+    const windowHeight = window.innerHeight;
+
+    const h1Rect = h1.getBoundingClientRect();
+    const pRect = p.getBoundingClientRect();
+
+    if (h1Rect.top < windowHeight - 100) {
+      h1.classList.add('animate');
+    }
+    if (pRect.top < windowHeight - 100) {
+      p.classList.add('animate');
+    }
+  }
+
+  // Run on scroll
+  window.addEventListener('scroll', animateOnView);
+
+  // Run on load (for refresh)
+  window.addEventListener('load', animateOnView);
+</script>
+
+
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+
+</body>
+</html>

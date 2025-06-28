@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mangalore - Shiva Nandi Travels</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/mangalore.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <header class="mangalore-us-contanier">
+  <div class="mangalore-us-card-container">
+    <h1>Mangalore</h1>
+    <p>Mangalore is a coastal city where vibrant culture meets the Arabian Sea, known for its beaches, temples, and delicious seafood.</p>
+  </div>
+</header>
+
+
+
+
+<section class="trip-section">
+ <div class="trip-content">
+  <h1>Mangalore – The Coastal Gem of Karnataka</h1>
+  <p>Situated along the Arabian Sea, Mangalore (officially Mangaluru) is a vibrant port city known for its rich history, diverse culture, pristine beaches, and delicious cuisine. Often referred to as the “Gateway to Karnataka’s Coast,” Mangalore offers a perfect blend of tradition, modernity, and natural beauty.</p>
+
+  <h1>Historical & Cultural Heritage</h1>
+  <ul>
+    <li>Mangalore’s history dates back to ancient times as an important trading port connecting to the Middle East and Europe.</li>
+    <li>The city is home to diverse communities including Tuluvas, Konkanis, Bearys, and Muslims, contributing to its multicultural fabric.</li>
+    <li>Architectural landmarks include the 16th-century St. Aloysius Chapel, Kadri Manjunath Temple, and Sultan Battery fort.</li>
+    <li>Mangalore is famous for its traditional Yakshagana dance-drama and vibrant festivals like Dasara and Mardi.</li>
+  </ul>
+
+  <h1>Top Attractions & Natural Beauty</h1>
+  <ul>
+    <li><strong>Panambur Beach:</strong> A clean and lively beach known for its sunsets, beach festivals, and water sports.</li>
+    <li><strong>Someshwara Beach:</strong> Known for rocky shores and the ancient Someshwara Temple nearby.</li>
+    <li><strong>St. Aloysius Chapel:</strong> Renowned for its beautiful frescoes and impressive architecture.</li>
+    <li><strong>Kukke Subramanya Temple:</strong> A famous pilgrimage site near Mangalore, dedicated to Lord Subramanya.</li>
+    <li><strong>Mangaladevi Temple:</strong> The city’s namesake temple, dedicated to Goddess Mangaladevi.</li>
+    <li><strong>Ullal Beach and Lighthouse:</strong> A quieter beach spot with scenic views and historical significance.</li>
+    <li><strong>Pilgrimage Spots:</strong> Including the famous Dharmasthala and Kateel temples located within reachable distances.</li>
+  </ul>
+
+  <img src="https://www.anjaneyatourandtravels.com/wp-content/uploads/2025/04/38.jpg" />
+
+  <h1>Cuisine & Culture</h1>
+  <ul>
+    <li>Mangalore is famous for its unique coastal cuisine featuring seafood delicacies, Neer Dosa, Kori Roti, and Mangalore Buns.</li>
+    <li>The city celebrates a variety of festivals with traditional music, dance, and food, reflecting its cultural diversity.</li>
+  </ul>
+<h1>Festivals, Shopping & Lifestyle</h1>
+<p>Mangalore is a vibrant city where tradition, culture, and modernity blend seamlessly to create a unique coastal lifestyle. The city’s rich cultural heritage is reflected in its many festivals, which are celebrated with great enthusiasm and color. The grand Mangalore Dasara festival is a highlight, featuring spectacular processions, folk dances, and traditional music that draw visitors from all over. Yakshagana, a classical dance-drama unique to this region, brings ancient stories to life with elaborate costumes and captivating performances.</p>
+
+<p>Another cultural highlight is the Karavali Utsav, a festival that showcases the diverse traditions, art forms, and cuisine of the Tulu Nadu region. These festivities are not just celebrations but a living testament to Mangalore’s deep-rooted cultural identity.</p>
+
+<p>When it comes to shopping, Mangalore offers a treasure trove of authentic crafts and goods. Visitors can explore bustling local markets like Hampankatta and Derebail for exquisite sandalwood carvings, traditional Tulu jewelry, and intricate rosewood artifacts. The city is also known for its handwoven textiles and vibrant cashew products. Modern shopping centers such as City Centre Mall and Forum Fiza offer a blend of traditional and contemporary shopping experiences, making it easy to find something special for every taste.</p>
+
+<p>The coastal lifestyle is deeply connected to the sea, with fishing harbors bustling at dawn and beachside shacks serving some of the freshest seafood. Mangalore’s cuisine is a delicious blend of coastal flavors, famous for dishes like fish curry, neer dosa, kori roti, and goli baje. Dining here is not just about food—it’s an immersion into the local way of life, where hospitality and flavor come together to create unforgettable experiences.</p>
+
+<p>Whether you’re wandering through vibrant markets, participating in cultural festivals, or enjoying a sunset by the Arabian Sea, Mangalore offers a lively and welcoming atmosphere that captures the heart of Karnataka’s coastal spirit.</p>
+
+
+  <h1>Experience Mangalore with Anjaneya Travels</h1>
+  <p>Discover the charm of Karnataka’s coastal city with us—where tradition meets the sea and every moment brings new delights.</p>
+
+  <a href="https://wa.me/917483636511?text=Hi%20Anjaneya%20Travels%2C%20I'm%20interested%20in%20the%20Mangalore%20tour." target="_blank" rel="noopener noreferrer">
+    <button><i class="fab fa-whatsapp"></i> Chat on WhatsApp</button>
+  </a>
+
+
+
+</div>
+</section>
+
+
+
+<div>
+  <h1 style="text-align: center;">Book Your Places</h1>
+    <form class="trip-form" action="/submit" method="POST">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Name" required>
+    </div>
+    <div class="form-group">
+      <label>Email Id</label>
+      <input type="email" name="email" placeholder="Email Id" required>
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="text" name="phone" placeholder="Please Enter Your PH. No." required>
+    </div>
+  
+    <div class="form-group">
+      <label>No. of Adults</label>
+      <input type="number" name="adults" placeholder="No. OF Adults" required>
+    </div>
+
+    <div class="form-group">
+      <label>No. of Children</label>
+      <input type="number" name="children" placeholder="No. OF Children">
+    </div>
+    <div class="form-group">
+      <label>Date</label>
+      <input type="date" name="date" required>
+    </div>
+
+    <div class="form-group">
+      <label>Select AC</label>
+      <select name="ac">
+        <option value="AC">AC</option>
+        <option value="Non-AC">Non-AC</option>
+        <option value="Luxury">Luxury</option>
+      </select>
+
+
+    </div>
+      <div class="form-group">
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="">--Choose a Destination--</option>
+        <option value="mysore">Mysore</option>
+        <option value="coorg">Coorg</option>
+        <option value="chikkamagalur">Chikkamagalur</option>
+        <option value="Chamarjanagara">Chamarjanagara</option>
+        <option value="shivamogga">shivamogga</option>
+        <option value="mangalore">Mangalore</option>
+        <option value="udupi">Udupi</option>
+        <option value="vijiyanagar">Vijiyanagar</option>
+      </select>
+      </div>
+
+
+    <div class="form-submit">
+      <button type="submit">Submit Now</button>
+    </div>
+  </form>
+  </div>
+
+<button id="backToTop" title="Go to top">⬆️</button>
+
+  <%- include('partials/footer') %>
+
+  
+<script>
+  function animateOnView() {
+    const h1 = document.querySelector('.mangalore-us-card-container h1');
+    const p = document.querySelector('.mangalore-us-card-container p');
+    const windowHeight = window.innerHeight;
+
+    const h1Rect = h1.getBoundingClientRect();
+    const pRect = p.getBoundingClientRect();
+
+    if (h1Rect.top < windowHeight - 100) {
+      h1.classList.add('animate');
+    }
+    if (pRect.top < windowHeight - 100) {
+      p.classList.add('animate');
+    }
+  }
+
+  // Run on scroll
+  window.addEventListener('scroll', animateOnView);
+
+  // Run on load (for refresh)
+  window.addEventListener('load', animateOnView);
+</script>
+
+
+
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+</body>
+</html>
